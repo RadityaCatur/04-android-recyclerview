@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.recyclerview.R;
@@ -80,8 +81,9 @@ public class WordListAdapter extends
      * @param viewType The view type of the new View. @return A new ViewHolder
      *                 that holds a View of the given view type.
      */
+    @NonNull
     @Override
-    public WordListAdapter.WordViewHolder onCreateViewHolder(ViewGroup parent,
+    public WordListAdapter.WordViewHolder onCreateViewHolder(@NonNull ViewGroup parent,
                                                              int viewType) {
         // Inflate an item view.
         View mItemView = mInflater.inflate(
